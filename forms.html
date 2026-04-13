@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <a href="index.html">Back to Main Page</a>
+    <section>
+      <h2>Forms Examples</h2>
+      <article>
+        <h3>Form with input inside of label</h3>
+        <pre>
+      <code>
+       &lt;form&gt;
+         &lt;label&gt;
+          full name:
+          &lt;input type="text"&gt;
+         &lt;/label&gt;
+       &lt;/form&gt;
+      </code>
+    </pre>
+        <form>
+          <label>
+            full name:
+            <input type="text" />
+          </label>
+        </form>
+      </article>
+      <article>
+        <h3>Form with input outside of label</h3>
+        <pre>
+     <code>
+    &lt;form&gt;
+      &lt;label for="name">Your Name&lt;/label&gt;
+      &lt;input type="text" id="name" placeholder="enter your fucking name"&gt;
+    &lt;/form&gt;
+     </code> 
+    </pre>
+        <form>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="enter your fucking name" />
+        </form>
+      </article>
+    </section>
+    <section>
+      <h2>Buttons</h2>
+      <article>
+        <h3>Button type "buton"</h3>
+        <p>
+          одиночна кнопка, яка, наприклад, через скріпт, викликає спливаюче
+          вікно оголошення (alert), тут не працює, бо не підключено скрипти
+        </p>
+        <pre>
+        <code>
+   &lt;button type="button"&gt;Show Alert&lt;/button&gt;
+        </code>
+      </pre>
+        <button type="button">Show Alert</button>
+      </article>
+      <article>
+        <h3>Button that submits filled form</h3>
+        <p>
+          Кнопка, яка відправляє заповнені дані з форми на сервер (тут не
+          працює)
+        </p>
+        <pre>
+        <code>
+      &lt;label for="email"&gt;Email Address:&lt;/label&gt;
+      &lt;input type="email" id="email" name="email" placeholder="Your fucking email"&gt;
+      &lt;button type="submit"&gt;Submit form&lt;/button&gt;
+        </code>
+      </pre>
+        <form>
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your fucking email"
+          />
+          <button type="submit">Submit form</button>
+        </form>
+      </article>
+      <article>
+        <h3>Button Reset</h3>
+        <p>Button that resets the filled form</p>
+        <pre>
+        <code>
+  &lt;label for="pnone"&gt;Your Phone:&lt;/label&gt;
+  &lt;input type="tel" id="pnone" name="phone" placeholder="+380999999999"&gt;
+  &lt;button type="reset"&gt;Reset Your Phone Number&lt;/button&gt;
+  &lt;button type="submit"&gt;Submit your phone number&lt;/button&gt;
+        </code>
+      </pre>
+        <form>
+          <label for="pnone">Your Phone:</label>
+          <input
+            type="tel"
+            id="pnone"
+            name="phone"
+            placeholder="+380999999999"
+          />
+          <button type="reset">Reset Your Phone Number</button>
+          <button type="submit">Submit your phone number</button>
+        </form>
+      </article>
+    </section>
+  </body>
+</html>
