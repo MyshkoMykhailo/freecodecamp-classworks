@@ -7,13 +7,15 @@
 
   <body>
     <h1>Checkout</h1>
-    <a href="index.html">Back to Main Page</a><br />
+    <a href="index.html">Back to Main Page</a>
     <section>
       <h2>Your Cart</h2>
       <img
         src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg"
         alt="Rubik’s Cube."
       />
+      <p>Rubik’s Cube</p>
+      <p>Price: 23UAH</p>
     </section>
     <section>
       <h2>Payment Information</h2>
@@ -35,6 +37,26 @@
         <p id="card-number-help">
           Please enter your 16-digit card number without spaces or dashes.
         </p>
+        <label for="expiry-date"
+          >Expiry Date <span aria-hidden="true">*</span>
+        </label>
+        <input
+          required
+          type="month"
+          id="expiry-date"
+          name="expiry-date"
+        /><br />
+        <label for="cvv">CVV <span aria-hidden="true">*</span> </label>
+        <input
+          required
+          type="number"
+          id="cvv"
+          name="cvv"
+          min="0"
+          max="9999"
+          aria-label="Card Verification Value"
+        /><br />
+        <button type="Submit">Place order</button>
       </form>
     </section>
   </body>
